@@ -1,13 +1,13 @@
 {
-  "name": "2025-boilerplate",
-  "description": "a local-first web app boilerplate for 2025",
+  "name": "2026-boilerplate",
+  "description": "a local-first web app boilerplate for 2026",
   "author": "BishopZ",
   "private": true,
   "version": "1.1.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bishopz/2025-boilerplate"
+    "url": "https://github.com/bishopz/2026-boilerplate"
   },
   "type": "module",
   "scripts": {

@@ -1,4 +1,8 @@
-A local-first web app boilerplate for 2025
+A local-first web app boilerplate for 2026
+
+## Transition to 2026
+
+Welcome to the 2026 Boilerplate! This repository represents a fresh start for the new year, building upon the solid foundation established in the 2025 version. As we move forward into 2026, we're excited to welcome collaborators and discussions that will help shape the future direction of this boilerplate. We look forward to new additions, improvements, and community contributions that will make this an even better starting point for modern web applications.
 
 ## Motivation
 
@@ -15,7 +19,7 @@ This boilerplate is right for you if:
 - You will have a lot of state data that should persist across the application.
 
 
-## 2025 stack
+## 2026 stack
 
 ### Frontend
 
@@ -51,7 +55,7 @@ The reasoning for each item is included below.
 
 ### Development Setup
 
-1. Clone the repo, `git clone git@github.com:bishopZ/2025-Boilerplate.git`. `cd 2025-Boilerplate` into the repo directory.
+1. Clone the repo, `git clone git@github.com:bishopZ/2026-Boilerplate.git`. `cd 2026-Boilerplate` into the repo directory.
 1. Create a file called `.env` in the root project folder by copying the template: `cp .envTemplate .env`
 1. Edit `.env` and update the values:
    - `LOCAL_STORAGE_KEY="your-secret-key"` - Used to encrypt client-side data

@@ -12,7 +12,7 @@ const About = () => {
         <VStack gap={6} align="stretch">
           <Box>
             <Heading as="h1" size="2xl" mb={4}>
-              About 2025 Boilerplate
+              About 2026 Boilerplate
             </Heading>
             <Text fontSize="lg" color="gray.600" mb={4}>
               A sophisticated starting point for building modern web applications.

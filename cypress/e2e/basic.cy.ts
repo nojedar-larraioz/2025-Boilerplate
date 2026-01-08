@@ -2,7 +2,7 @@ describe('Basic E2E Test', () => {
   it('should load the login page', () => {
     cy.visit('/');
     cy.url().should('include', '/login');
-    cy.contains('2025 Boilerplate').should('be.visible');
+    cy.contains('2026 Boilerplate').should('be.visible');
   });
 
   it('should allow user to login', () => {
@@ -17,7 +17,7 @@ describe('Basic E2E Test', () => {
 
     // Should redirect to home page after successful login
     cy.url().should('not.include', '/login');
-    cy.contains('Welcome to the 2025 Boilerplate!').should('be.visible');
+    cy.contains('Welcome to the 2026 Boilerplate!').should('be.visible');
   });
 });
 

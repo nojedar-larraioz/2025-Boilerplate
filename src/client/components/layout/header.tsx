@@ -6,7 +6,7 @@ export const Header = () => {
     <Box as="header" bg="gray.100" py={4} px={8} boxShadow="sm">
       <Flex justify="space-between" align="center">
         <Heading as="h1" size="lg">
-          <RouterLink to="/">2025 Boilerplate</RouterLink>
+          <RouterLink to="/">2026 Boilerplate</RouterLink>
         </Heading>
         <Flex gap={4}>
           <Button as={RouterLink} asChild variant="ghost">

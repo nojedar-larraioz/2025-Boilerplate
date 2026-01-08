@@ -17,7 +17,7 @@ const Home = () => {
         <VStack gap={6} align="stretch">
           <Box>
             <Heading as="h1" size="2xl" mb={2}>
-              Welcome to the 2025 Boilerplate! ({score})
+              Welcome to the 2026 Boilerplate! ({score})
             </Heading>
             <Text fontSize="lg" color="gray.600">
               A modern, full-stack web application starter with TypeScript, React, and Node.js
