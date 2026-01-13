@@ -5,7 +5,7 @@ import { ensureAuthenticated } from '../middleware/auth';
 const router = Router();
 
 // API routes - all require authentication
-router.get('/key', ensureAuthenticated, getKey);
+router.get('/api/key', ensureAuthenticated, getKey);
 
 export default router;
 

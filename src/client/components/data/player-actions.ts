@@ -31,9 +31,10 @@ export const initPlayer = createAsyncThunk(
       let key: string;
       try {
         const jsonData = await response.json() as { key: string; };
-        if (!jsonData?.key) {
+        if (!jsonData.key) {
           throw new Error('Invalid response format: missing key');
         }
+        /* eslint-disable-next-line prefer-destructuring */
         key = jsonData.key;
       } catch (parseError) {
         console.error('Failed to parse key response:', parseError);
