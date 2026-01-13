@@ -1,12 +1,12 @@
 import { Box, Button, Container, Heading, Text, VStack } from '@chakra-ui/react';
 import { Link as RouterLink } from 'react-router-dom';
 import { Footer } from '../components/layout/footer';
-import { Header } from '../components/layout/header';
+import { PublicHeader } from '../components/layout/header';
 
 const NotFound = () => {
   return (
     <>
-      <Header />
+      <PublicHeader />
       <Container maxW="container.md" py={8}>
         <VStack gap={6} align="center">
           <Box textAlign="center">

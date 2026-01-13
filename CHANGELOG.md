@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 + Added proper SEO metadata to the index page.
++ Added a sitemap.xml file for public pages.
 
 ### Changed
 
