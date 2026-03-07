@@ -1,6 +1,7 @@
 import { Box, Button, Heading, Text, VStack, List } from '@chakra-ui/react';
 import { Link as RouterLink } from 'react-router';
 import { LuCheck } from 'react-icons/lu';
+import { ROUTES } from '../shared/constants';
 import { PageLayout } from '../components/layout/page-layout';
 import { PageMeta } from '../components/ui/page-meta';
 
@@ -63,11 +64,9 @@ const About = () => {
 
         <Box>
           <Button
-            as={RouterLink}
             asChild
-            colorScheme="blue"
-          >
-            <a href="/">Back to Home</a>
+            colorScheme="blue">
+            <RouterLink to={ROUTES.HOME}>Back to Home</RouterLink>
           </Button>
         </Box>
       </VStack>

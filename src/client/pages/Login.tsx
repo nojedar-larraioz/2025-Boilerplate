@@ -10,6 +10,7 @@ import {
 import { Field } from '@chakra-ui/react';
 import { PageLayout } from '../components/layout/page-layout';
 import { PageMeta } from '../components/ui/page-meta';
+import { API_PATHS } from '../shared/constants';
 import { getCsrfToken } from '../shared/csrf';
 
 const Login = () => {
@@ -31,7 +32,7 @@ const Login = () => {
           <Text color="gray.600">Welcome to the login page.</Text>
         </Box>
 
-        <form action="/login/password" method="post">
+        <form action={API_PATHS.LOGIN} method="post">
           <input type="hidden" name="_csrf" value={getCsrfToken()} />
           <VStack gap={4} align="stretch">
             <Field.Root>

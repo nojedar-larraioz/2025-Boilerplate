@@ -1,5 +1,6 @@
 import { Box, Button, Heading, Text, VStack } from '@chakra-ui/react';
 import { Link as RouterLink } from 'react-router';
+import { ROUTES } from '../shared/constants';
 import { PageLayout } from '../components/layout/page-layout';
 import { PageMeta } from '../components/ui/page-meta';
 
@@ -26,10 +27,10 @@ const NotFound = () => {
 
         <VStack gap={3} pt={4}>
           <Button asChild colorScheme="blue" size="lg">
-            <RouterLink to="/">Go to Home Page</RouterLink>
+            <RouterLink to={ROUTES.HOME}>Go to Home Page</RouterLink>
           </Button>
           <Button asChild variant="outline" size="md">
-            <RouterLink to="/about">Learn About This Project</RouterLink>
+            <RouterLink to={ROUTES.ABOUT}>Learn About This Project</RouterLink>
           </Button>
         </VStack>
       </VStack>

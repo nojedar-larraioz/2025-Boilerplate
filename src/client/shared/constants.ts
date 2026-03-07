@@ -16,3 +16,19 @@ export const SITE_META_THEME_COLOR = '#ffffff';
 export const SITE_META_MOBILE_WEB_APP_CAPABLE = 'yes';
 export const SITE_META_APPLE_STATUS_BAR_STYLE = 'default';
 
+export const ROUTES = {
+  HOME: '/',
+  LOGIN: '/login',
+  PRODUCT: '/product',
+  ABOUT: '/about',
+  PRIVACY: '/privacy',
+  TERMS: '/terms',
+  LOGOUT: '/logout',
+} as const;
+
+export const API_PATHS = {
+  LOGIN: '/login/password',
+  LOGOUT: '/logout',
+  KEY: '/api/key',
+} as const;
+
