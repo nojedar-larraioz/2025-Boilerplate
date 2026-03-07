@@ -3,12 +3,15 @@ import { Link as RouterLink } from 'react-router';
 import { LuCheck } from 'react-icons/lu';
 import { ROUTES } from '../shared/constants';
 import { PageLayout } from '../components/layout/page-layout';
+import { PageMeta } from '../components/ui/page-meta';
 
 const About = () => {
   return (
     <PageLayout>
-      <title>About - 2026 Boilerplate</title>
-      <meta name="description" content="Learn about the 2026 Boilerplate — a full-stack starter kit with React, Express, Redux, and Chakra UI" />
+      <PageMeta
+        title="About - 2026 Boilerplate"
+        description="Learn about the 2026 Boilerplate — a full-stack starter kit with React, Express, Redux, and Chakra UI"
+      />
       <VStack gap={6} align="stretch">
         <Box>
           <Heading as="h1" size="2xl" mb={4}>

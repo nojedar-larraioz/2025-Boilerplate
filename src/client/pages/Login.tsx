@@ -9,6 +9,7 @@ import {
 } from '@chakra-ui/react';
 import { Field } from '@chakra-ui/react';
 import { PageLayout } from '../components/layout/page-layout';
+import { PageMeta } from '../components/ui/page-meta';
 import { API_PATHS } from '../shared/constants';
 import { getCsrfToken } from '../shared/csrf';
 
@@ -19,8 +20,10 @@ const Login = () => {
 
   return (
     <PageLayout maxW="container.sm">
-      <title>Login - 2026 Boilerplate</title>
-      <meta name="description" content="Sign in to the 2026 Boilerplate application" />
+      <PageMeta
+        title="Login - 2026 Boilerplate"
+        description="Sign in to the 2026 Boilerplate application"
+      />
       <VStack gap={6} align="stretch">
         <Box>
           <Heading as="h1" size="2xl" mb={2}>
