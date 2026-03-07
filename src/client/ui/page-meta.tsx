@@ -14,7 +14,7 @@ import {
   SITE_META_THEME_COLOR,
   SITE_META_MOBILE_WEB_APP_CAPABLE,
   SITE_META_APPLE_STATUS_BAR_STYLE,
-} from '../../shared/constants';
+} from '../shared/constants';
 
 interface PageMetaProps {
   title: string;
