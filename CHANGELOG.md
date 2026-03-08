@@ -8,19 +8,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+### Changed
+### Removed
+### Fixed
+### Security
+
+
+## [1.2.0] - 2026-03-07
+
+### Added
 
 + Added proper SEO metadata and a sitemap.xml file to public pages.
 + Added Terms of service and Privacy policy.
-+ Added AI-friendly files such as AGENTS.md & ARCHITECTURE.md.
++ Added AI-friendly files such as AGENTS.md & docs/ARCHITECTURE.md.
 + Added a new `skills/` folder using `skills/<skill-name>/SKILL.md` format, including `skills/rebrand/SKILL.md` for rebranding title/description metadata across `index.html`, `package.json`, `README.md`, and header branding.
-+ Added `skills/docx/SKILL.md` for creating, reading, editing, and manipulating Word (`.docx`) files.
 + Added a shared `PageMeta` component that maps page title/description to full metadata fields using React 19 metadata tags (Open Graph, Twitter, canonical, and mobile tags), with usage across every page and Cypress coverage.
 + Added React 19 meta tags.
 + Added ScrollToTop functionality on route change.
-+ Added a shared `PageTransistion` component in `src/client/ui/components/page-transistion.tsx`, integrated through `PageLayout` so route transitions apply across all pages.
++ Added a shared `PageTransition` component in `src/client/ui/components/page-transition.tsx`, integrated through `PageLayout` so route transitions apply across all pages.
 + Added a shared `AnimatedButton` component in `src/client/ui/components/animated-button.tsx` to reuse Framer Motion tap animations across app buttons.
 + Improved Accessibility: skip to content link, useId() to avoid form field id collisions, and useAnnounce hook for aria-live.
 + Better Error handling: Added second suspense boundary around the content, error-handler middleware for the server, and an centralized error handler for the client.
++ Added a second non-persistent reducer for more transient data.
 
 ### Changed
 
@@ -45,7 +54,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 + Fixed a bug that prevented it from loading without any saved data. Cold start now working as expected.
 
-### Security
 
 ## [1.1.0] - 2025-08-14
 

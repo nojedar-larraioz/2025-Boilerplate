@@ -2,14 +2,14 @@
 
 ## Project Overview
 
-2026 Boilerplate is a full-stack TypeScript/React web app with an Express backend. See [ARCHITECTURE.md](ARCHITECTURE.md) for the system diagram and directory structure.
+2026 Boilerplate is a full-stack TypeScript/React web app with an Express backend. See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for the system diagram and directory structure.
 
 ## Skills
 
 - Skills live in `skills/<skill-name>/SKILL.md`.
 - If a request matches a skill, read and follow that skill before implementing changes.
 - `skills/rebrand/SKILL.md` — Rebrand the boilerplate into a new project using a new site title and description.
-- `skills/docx/SKILL.md` — Create, read, edit, and manipulate `.docx` files.
+- `skills/hidden-admin-auth/SKILL.md` — Configure the private section as a hidden admin utility and rotate hardcoded default credentials safely.
 
 ## Development Setup
 
@@ -24,6 +24,7 @@
 - `npm run lint` / `npm run lint:fix` — ESLint
 - `npm run type-check` — TypeScript type verification
 - `npm run build` — production build
+- `npm run test` — Full suite: lint + type-check + E2E
 - `npm run test:e2e` — Cypress E2E tests (dev server must be running)
 
 ## Code Guidelines
@@ -32,14 +33,38 @@
 - Use Chakra UI for all UI components.
 - Follow the MVC pattern on the server (routes → controllers → services).
 - Redux for global state; `useState`/`useReducer` for component-local state.
-- See `src/client/data/README.md` for state management patterns.
+- See `src/client/redux/README.md` for state management patterns.
 - See `src/client/hooks/README.md` for custom hook patterns.
+- See Cursor rules in `.cursor/rules/`:
+  - `.cursor/rules/react-components.mdc`
+  - `.cursor/rules/state-management.mdc`
+  - `.cursor/rules/server-patterns.mdc`
+
+## Documentation Guides
+
+- The `docs/` folder contains project-wide guides and expectations:
+  - `docs/ARCHITECTURE.md`
+  - `docs/AUTHENTICATION.md`
+  - `docs/CONTRIBUTING.md`
+  - `docs/I18N.md`
+  - `docs/SCRIPTS.md`
+  - `docs/TECHNOLOGY.md`
+
+## Feature Change Checklist
+
+When adding or changing a feature, check all affected surfaces before opening a PR:
+
+- Update `CHANGELOG.md` (`Unreleased` section).
+- Update or add automated tests (unit/integration/E2E as appropriate).
+- Update locale strings in `src/client/locales/*.json` for any UI text changes.
+- Update docs in `docs/` and/or component/service READMEs when behavior or workflow changes.
+- Update `.cursor/rules/` and `skills/` when agent guidance or SOPs are affected.
 
 ## Testing
 
 - Login credentials: username `test`, password `test`
 - E2E tests are in `cypress/e2e/` and require the dev server to be running
-- Before committing: `npm run lint:fix && npm run type-check`
+- Before committing: `npm run test`
 
 ## Cursor Cloud specific instructions
 
